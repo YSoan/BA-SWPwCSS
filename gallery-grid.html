@@ -1,95 +1,95 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bộ sưu tập (Grid)</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grid</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Chuyển đến nội dung chính</a>
-  <header>
-    <div class="container navbar" role="navigation" aria-label="Chính">
-      <div class="brand">🌿 CSS Practice</div>
-      <nav aria-label="Điều hướng chính">
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="gallery-grid.html" aria-current="page">Bộ sưu tập (Grid)</a></li>
-          <li><a href="gallery-flex.html">Bộ sưu tập (Flex)</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
+<div class="container navbar" role="navigation" aria-label="Main">
+<div class="brand">🌿 CSS Practice</div>
+<nav aria-label="Main Navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="gallery-grid.html" aria-current="page">Grid</a></li>
+<li><a href="gallery-flex.html">Gallery (Flex)</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-  <main id="main" class="container" tabindex="-1">
-    <h1>Bộ sưu tập dạng Lưới (Grid)</h1>
-    <p class="lead">Áp dụng <code>display: grid</code> với ít nhất hai cột. Sử dụng <code>:nth-child</code> để thay đổi bo góc từng ảnh một cách có hệ thống.</p>
+<main id="main" class="container" tabindex="-1">
+<h1>Grid Gallery</h1>
+<p class="lead">Apply <code>display: grid</code> with at least two columns. Use <code>:nth-child</code> to systematically change the corner rounding for each image.</p>
 
-    <section aria-label="Thư viện ảnh kiểu lưới">
-      <div class="grid-gallery">
-        <!-- Ít nhất 6 ảnh để vượt yêu cầu >=5 -->
-        <article class="img-card">
-  <div class="img-frame">
-    <img src="images/1.jpg" alt="Ảnh minh họa số 1" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #1</p>
+<section aria-label="Grid Gallery">
+<div class="grid-gallery">
+<!-- At least 6 images to exceed the >=5 requirement -->
+<article class="img-card">
+<div class="img-frame">
+<img src="images/1.jpg" alt="Illustration #1" loading="lazy">
+</div>
+<p class="caption">Image #1</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/2.jpg" alt="Ảnh minh họa số 2" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #2</p>
+<div class="img-frame">
+<img src="images/2.jpg" alt="Illustration #2" loading="lazy">
+</div>
+<p class="caption">Image #2</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/3.jpg" alt="Ảnh minh họa số 3" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #3</p>
+<div class="img-frame">
+<img src="images/3.jpg" alt="Illustrative image number 3" loading="lazy">
+</div>
+<p class="caption">Image #3</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/4.jpg" alt="Ảnh minh họa số 4" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #4</p>
+<div class="img-frame">
+<img src="images/4.jpg" alt="Illustrative image number 4" loading="lazy">
+</div>
+<p class="caption">Image #4</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/5.jpg" alt="Ảnh minh họa số 5" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #5</p>
+<div class="img-frame">
+<img src="images/5.jpg" alt="Illustrative image number 5" loading="lazy">
+</div>
+<p class="caption">Image #5</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/6.jpg" alt="Ảnh minh họa số 6" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #6</p>
+<div class="img-frame">
+<img src="images/6.jpg" alt="Illustrative image number 6" loading="lazy">
+</div>
+<p class="caption">Image #6</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/7.jpg" alt="Ảnh minh họa số 7" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #7</p>
+<div class="img-frame">
+<img src="images/7.jpg" alt="Illustrative image number 7" loading="lazy">
+</div>
+<p class="caption">Image #7</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/8.jpg" alt="Ảnh minh họa số 8" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #8</p>
+<div class="img-frame">
+<img src="images/8.jpg" alt="Illustrative image number 8" loading="lazy">
+</div>
+<p class="caption">Image #8</p>
 </article>
 <article class="img-card">
-  <div class="img-frame">
-    <img src="images/9.jpg" alt="Ảnh minh họa số 9" loading="lazy">
-  </div>
-  <p class="caption">Ảnh #9</p>
+<div class="img-frame">
+<img src="images/9.jpg" alt="Illustrative image number 9" loading="lazy">
+</div>
+<p class="caption">Image #9</p>
 </article>
-      </div>
-    </section>
-  </main>
+</div>
+</section> 
+</main> 
 
-  <footer>
-    <div class="container">
-      <p>Kiểm tra tính hợp lệ: <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a> • Đánh giá truy cập: <a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a></p>
-    </div>
-  </footer>
+<footer> 
+<div class="container"> 
+<p>Validation check: <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a> • Access review: <a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a></p> 
+</div> 
+</footer>
 </body>
 </html>
