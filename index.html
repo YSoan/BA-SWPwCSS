@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ • Dự án HTML/CSS có Truy cập</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Chuyển đến nội dung chính</a>
+  <header>
+    <div class="container navbar" role="navigation" aria-label="Chính">
+      <div class="brand">🌿 CSS Practice</div>
+      <nav aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+          <li><a href="gallery-grid.html">Bộ sưu tập (Grid)</a></li>
+          <li><a href="gallery-flex.html">Bộ sưu tập (Flex)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <h1>Chào mừng!</h1>
+    <p class="lead">Dự án mẫu đáp ứng các yêu cầu: liên kết “Chuyển đến nội dung chính”, điều hướng dễ tiếp cận, sử dụng Grid &amp; Flex, mô hình hộp cho hình ảnh, hiệu ứng :hover, bộ chọn :nth-child, tỉ lệ ảnh nhất quán và giới hạn kích thước.</p>
+
+    <section>
+      <h2>Giới thiệu ngắn</h2>
+      <p>Hãy thay thế ảnh bằng ảnh của bạn trong thư mục <code>images/</code> với tên <strong>1.jpg, 2.jpg, 3.jpg...</strong>. Ở trang Grid có ít nhất năm ảnh theo yêu cầu. Tất cả ảnh đều được giới hạn kích thước tối đa và cắt theo cùng tỉ lệ bằng <code>aspect-ratio</code> và <code>object-fit</code>.</p>
+    </section>
+
+    <section>
+      <h2>Ảnh nổi bật</h2>
+      <div class="grid-gallery">
+        <article class="img-card">
+          <div class="img-frame">
+            <img src="images/1.jpg" alt="Ảnh minh họa số 1" loading="lazy">
+          </div>
+          <p class="caption">Ảnh #1 – thẻ ảnh có viền, padding và bo góc.</p>
+        </article>
+        <article class="img-card">
+          <div class="img-frame">
+            <img src="images/2.jpg" alt="Ảnh minh họa số 2" loading="lazy">
+          </div>
+          <p class="caption">Ảnh #2 – nth-child thay đổi bán kính đường viền.</p>
+        </article>
+        <article class="img-card">
+          <div class="img-frame">
+            <img src="images/3.jpg" alt="Ảnh minh họa số 3" loading="lazy">
+          </div>
+          <p class="caption">Ảnh #3 – hiệu ứng hover nâng thẻ ảnh.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Kiểm tra tính hợp lệ: <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a> • Đánh giá truy cập: <a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a></p>
+    </div>
+  </footer>
+</body>
+</html>
